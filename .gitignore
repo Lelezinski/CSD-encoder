@@ -50,3 +50,24 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# VHDL
+doc/*.pdf
+work/
+WORK/
+*.log
+*.swp
+transcript
+vsim.wlf
+default.svf
+#.synopsys_dc.setup
+*.bkp
+*.o
+__pycache__
+secrets.py
+runs
+.ipynb_*
+*.csv
+.direnv
+syn/
+sim/

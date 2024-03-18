@@ -2,7 +2,7 @@
 
 The generation of a Canonical Signed Digit (CSD) representation from a binary representation is revisited. Based on the property that each nonzero digit is surrounded by a zero digit, a hardware-efficient conversion method using bypass instead of carry propagation is proposed. The proposed method requires less area per digit and the required bypass signal can be generated or propagated with only a single NOR gate. It is shown that the proposed converter outperforms previous converters and a look-ahead circuitry to speed up the generation of bypass signals is also proposed.
 
-![Implemented Paper](https://www.researchgate.net/publication/260615745_Fast_and_VLSI_efficient_binary-to-CSD_encoder_using_bypass_signal)
+[Implemented Paper](https://www.researchgate.net/publication/260615745_Fast_and_VLSI_efficient_binary-to-CSD_encoder_using_bypass_signal)
 
 # License
 

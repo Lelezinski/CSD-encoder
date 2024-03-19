@@ -2,7 +2,7 @@
 
 SIM_DIR='./sim'
 SRC_DIR='./src'
-SIM_FILE_LIST='../src/COMPLIST'
+SIM_FILE_LIST='../utils/COMPLIST'
 TESTBENCH_FILE='./testbenches/DLX_tb.vhd'
 DESIGN='work.csd_tb'
 
@@ -22,10 +22,11 @@ if [ ! -d "$SIM_DIR" ]; then
     echo "[INFO] Creating simulation folder"
     mkdir -p "$SIM_DIR"
     echo "[INFO] Copying sources from $SRC_DIR"
-    echo "$TESTBENCH_FILE" >>"$SIM_FILE_LIST"
     cp -r $SRC_DIR/* $SIM_DIR/
+    cp -r $SRC_DIR/testbenches/* $SIM_DIR/
 else
     cp -r --update $SRC_DIR/* $SIM_DIR/
+    cp -r --update $SRC_DIR/testbenches/* $SIM_DIR/
 fi
 cd "$SIM_DIR"
 print_green "[DONE] Simulation folder setup"

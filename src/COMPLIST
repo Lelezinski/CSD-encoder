@@ -1,0 +1,6 @@
+# Component list for analysis
+csd_globals.vhd
+csd_pe.vhd
+csd_encoder.vhd
+csd_tb.vhd
+csd_pe_tb.vhd
